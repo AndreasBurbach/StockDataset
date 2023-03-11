@@ -14,6 +14,3 @@ The JSON was built with a dictionary in python according to the following scheme
 	   ...]
 	  "Stock2": ...
 	}
-
-
-Dataset will be uploaded on 10th March of 2023
