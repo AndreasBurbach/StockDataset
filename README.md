@@ -14,3 +14,6 @@ The JSON was built with a dictionary in python according to the following scheme
 	   ...]
 	  "Stock2": ...
 	}
+
+The data was collected from 2023-01-19 to 2023-03-09 and contains the following stocks:
+DEU40, SPX, NDQ, SX5E, UKX, SAP, BAYN, ADS, AAPL, TSLA, EURUSD, GBPUSD, USDJPY, BTCUSD, BTCEUR, ETHUSD, FDAX1!, GOLD, USOIL, UKOIL
