@@ -24,3 +24,9 @@ def stock_dataset_file_to_DataFrame(path: str, stockName: str) -> pd.DataFrame:
     raise ValueError("Stock name not found in dataset")
   
   return pd.DataFrame(data[stockName], columns=["DateTime", "Value"])
+
+#### Example ####
+# import os
+# path = os.path.abspath("data/20230119.json")
+
+# print(stock_dataset_file_to_DataFrame(path, "DEU40"))
