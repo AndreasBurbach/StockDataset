@@ -23,7 +23,11 @@ def stock_dataset_file_to_DataFrame(path: str, stockName: str) -> pd.DataFrame:
   if stockName not in data:
     raise ValueError("Stock name not found in dataset")
   
-  return pd.DataFrame(data[stockName], columns=["DateTime", "Value"])
+  df = pd.DataFrame(data[stockName], columns=["DateTime", "Value"])
+  df["DateTime"] = pd.to_datetime(df["DateTime"])
+  df.set_index("DateTime", inplace=True)
+  
+  return df
 
 #### Example ####
 # import os
